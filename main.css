@@ -1,0 +1,25 @@
+.container {
+    width: 100% ;
+}
+
+.top-header {
+    height: 75px;
+    display: flex;
+    background-color: #222222;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.top-left-block {
+    width: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-right-block {
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

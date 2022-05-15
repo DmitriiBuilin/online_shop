@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-    width: 100% ;
+    max-width: 100%;
 }
 
 .top-header {
@@ -22,4 +27,63 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.man-in-black {
+    position: relative;
+    height: 764px;
+    background-color: #F1E4E6;
+    background-image: url(img/man-in-black.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    }
+
+.the-brand {
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    top: 290px;
+    right: 330px ;
+}
+
+.the-brand::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    left: -28px ;
+}
+
+.top-the-brand-text {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.bottom-the-brand-text {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #222222;
+}
+
+.bottom-the-brand-text span {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #F16D7F;
 }

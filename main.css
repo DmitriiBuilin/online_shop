@@ -35,16 +35,16 @@
     background-color: #F1E4E6;
     background-image: url(img/man-in-black.png);
     background-repeat: no-repeat;
-    background-position: left;
-    }
+    background-position: left bottom;
+    
+}
 
 .the-brand {
     position: absolute;
-    
     display: flex;
     flex-direction: column;
     top: 290px;
-    right: 330px ;
+    right: 90px ;
 }
 
 .the-brand::before {
@@ -86,4 +86,111 @@
     font-size: 32px;
     line-height: 38.4px;
     color: #F16D7F;
+}
+
+
+
+
+.personal-offer {
+    height: 630px;
+}
+
+.personal-offer-first-part {
+    display: flex;
+    padding-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+}
+
+.personal-offer-second-part {
+    display: flex;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+}
+
+.personal-offer-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.personal-offer-upper-text,
+.personal-offer-lower-text {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    text-align: center;
+   
+}
+
+.personal-offer-upper-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.personal-offer-lower-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #F16D7F;
+}
+.personal-offer-for-women {
+    background-image: url(img/personal-women.png);
+    margin-right: 30px;
+}
+
+.personal-offer-for-men {
+    background-image: url(img/personal-men.png);
+    margin-right: 30px;
+}
+
+.personal-offer-for-kids{
+    background-image: url(img/personal-kids.png);
+}
+
+.personal-offer-for-women,
+.personal-offer-for-men,
+.personal-offer-for-kids {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    width: 360px;
+    
+    height: 260px;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+}
+
+.personal-offer-accesorise {
+    
+    background-image: url(img/personal-accesorise.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    width: 1140px;
+    max-width: 100%;
+    height: 180px;
+    max-height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+    
 }

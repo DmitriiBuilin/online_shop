@@ -72,6 +72,33 @@
     color: #FFFFFF;
 }
 
+/* -- pop-up-menu -- */
+input[type=checkbox]:checked ~ .pop-up-menu {
+    display: flex;
+}
+
+#on-click {
+    display: none;
+}
+
+.pop-up-menu {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    width: 232px;
+    padding: 16px 0 157px 34px;
+    right: 0;
+}
+
+.pop-up-menu-general-items-decoration {
+    list-style-type: none;
+    
+}
+
+
+
 /* -- section_1 -- */
 
 .banner-whith-man {

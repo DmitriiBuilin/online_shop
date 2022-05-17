@@ -8,6 +8,8 @@
     margin: 0 auto;
 }
 
+/* -- header -- */
+
 .top-header {
     height: 75px;
     background-color: #222222;
@@ -69,6 +71,8 @@
     line-height: 14px;
     color: #FFFFFF;
 }
+
+/* -- section_1 -- */
 
 .banner-whith-man {
     position: relative;
@@ -134,27 +138,21 @@
     color: #F16D7F;
 }
 
-
-
+/* -- section_2 -- */
 
 .personal-offer {
     height: 630px;
+
 }
 
 .personal-offer-first-part {
     display: flex;
     padding-top: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1140px;
 }
 
 .personal-offer-second-part {
     display: flex;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1140px;
 }
 
 .personal-offer-link {

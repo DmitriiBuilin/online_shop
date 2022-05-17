@@ -4,15 +4,20 @@
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .top-header {
     height: 75px;
-    display: flex;
     background-color: #222222;
+}
+
+.navigation-panel {
+    display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    height: 75px;
+    padding-right: 10px ;
 }
 
 .top-left-block {
@@ -28,11 +33,52 @@
     align-items: center;
     justify-content: space-between;
 }
+.basket-button {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    align-items: top;
+    justify-content: right;
+}
+
+.basket-button-img {
+    
+    text-decoration: none;
+}
+
+.count-items {
+    margin-right: -10px;
+    margin-top: -6px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    border-radius: 50%;
+
+}
+.count-items-number {
+    
+    text-decoration: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.banner-whith-man {
+    position: relative;
+    height: 764px;
+    background-color: #F1E4E6;
+}
 
 .man-in-black {
     position: relative;
     height: 764px;
-    background-color: #F1E4E6;
     background-image: url(img/man-in-black.png);
     background-repeat: no-repeat;
     background-position: left bottom;

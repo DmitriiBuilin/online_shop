@@ -88,15 +88,78 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     background-color: #FFFFFF;
     margin-top: 24px;
     width: 232px;
+    height: 764px;
     padding: 16px 0 157px 34px;
     right: 0;
+    box-sizing: border-box;
 }
 
 .pop-up-menu-general-items-decoration {
     list-style-type: none;
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
+.pop-up-menu-menu-link,
+.pop-up-menu-item-link,
+.pop-up-menu-general-name-link {
+    text-decoration: none;
+}
+
+.pop-up-menu-close {
+    align-self: flex-end;
+    margin-right: 16px;
+}
+
+.pop-up-menu-menu-link {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.pop-up-menu-general-name-link {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.pop-up-menu-item-link {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.pop-up-menu-menu {
+    margin-bottom: 4px;
+}
+
+.pop-up-menu-general-name {
+    margin: 20px 0 12px 0;
+}
+
+.pop-up-menu-item {
+    margin-bottom: 11px;
+}
+
+.pop-up-menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.pop-up-menu-general-items {
+    padding-left: 21px;
+}
 
 
 /* -- section_1 -- */

@@ -329,21 +329,21 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 /* --section_3 -- */
 
-.gift-cards {
+.product-cards {
     height: 1490px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.gift-cards-header-block {
+.product-cards-header-block {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
 
-.gift-cards-header {
+.product-cards-header {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -352,7 +352,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     color: #222222;
 }
 
-.gift-cards-sub-header {
+.product-cards-sub-header {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -361,7 +361,16 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     color: #9F9F9F;
 }
 
-.gift-cards-items-block{
+.product-cards-mainblock {
     display: flex;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.product-cards-item {
+    margin-top: 30px;
+    width: 360px;
+    height: 581px;
+    background-color: #9F9F9F;
 }

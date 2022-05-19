@@ -334,6 +334,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .product-cards-header-block {
@@ -372,5 +373,40 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     margin-top: 30px;
     width: 360px;
     height: 581px;
-    background-color: #9F9F9F;
+    box-sizing: border-box;
+    background-color:#F8F8F8;
+}
+
+.product-cards-item-name {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 24px;
+    padding-left: 18px;
+}
+
+.product-cards-item-description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 13px;
+    padding-left: 18px;
+}
+
+.product-cards-item-name-price{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;  
+    color: #F16D7F;
+    margin-top: 18px;
+    padding-left: 18px;
 }

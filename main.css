@@ -330,7 +330,6 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 /* --section_3 -- */
 
 .product-cards {
-    height: 1490px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -365,6 +364,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 .product-cards-mainblock {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     margin-top: 18px;
 }
@@ -409,4 +409,18 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     color: #F16D7F;
     margin-top: 18px;
     padding-left: 18px;
+}
+
+.product-cards-button {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 14px 35px;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+    align-self: center;
+    margin: 77px 0 123px 0;
 }

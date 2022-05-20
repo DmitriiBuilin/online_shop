@@ -488,6 +488,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 .feedback-block {
     height: 448px;
+    width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -513,11 +514,62 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     padding-bottom: 20px;
 }
 
+.feedback-block-right-part {
+    width: 557px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.feedback-block-right-sendform {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-block-right-header {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40.13px;
+    text-align: center;
+    color: #222224;
+}
+
+.feedback-block-right-txt {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+    text-align: center;
+    color: #222224;    
+}
+
+.feedback-block-right-input {
+    box-sizing: border-box;
+    height: 49px;
+}
+
+.feedback-block-right-button {
+    box-sizing: border-box;
+    background-color: #F16D7F;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    height: 49px;
     
-
-
-
+}
 
 
 

@@ -547,15 +547,29 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     font-size: 18px;
     line-height: 30.1px;
     text-align: center;
-    color: #222224;    
+    color: #222224;
+    margin-bottom: 32px;    
 }
 
 .feedback-block-right-input {
     box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
     height: 49px;
+    width: 256px;
+    padding-left: 22px;font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    background-color: #E1E1E1;
+    border-style: none;
 }
 
 .feedback-block-right-button {
+    display: flex;
     box-sizing: border-box;
     background-color: #F16D7F;
     font-family: 'Lato';
@@ -563,12 +577,14 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     color: #FFFFFF;
     height: 49px;
-    
+    width: 100px;
+    border-radius: 0 20px 20px 0;
+    border-style: none;
 }
 
 

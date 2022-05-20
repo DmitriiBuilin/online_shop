@@ -436,6 +436,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     display: flex;
     justify-content: space-between;
     height: 341px;
+    align-items: center;
 }
 
 .special-offers-item {
@@ -445,6 +446,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .special-offers-item-head {
@@ -465,3 +467,6 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     text-align: center;
     color: #FBFBFB;
 }
+
+/* -- footer -- */
+

@@ -424,3 +424,44 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     align-self: center;
     margin: 77px 0 123px 0;
 }
+
+/* -- section_4 -- */
+
+.special-offers {
+    background-color: #222224;
+    height: 341px;
+}
+
+.special-offers-block {
+    display: flex;
+    justify-content: space-between;
+    height: 341px;
+}
+
+.special-offers-item {
+    width: 360px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-offers-item-head {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.special-offers-item-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}

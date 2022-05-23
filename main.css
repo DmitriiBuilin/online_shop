@@ -661,5 +661,30 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     cursor: pointer;
 }
 
+.social-networcs-icon-link {
+    text-decoration: none;
+
+}
 
 
+/* -- pagination -- */
+.product-cards:last-child {
+    align-items: center;   
+}
+
+.pagination {
+    display: inline-block;
+    border: 1px solid #EBEBEB;
+    margin: 48px auto 96px auto;
+  }
+  
+  .pagination a {
+    color: #EBEBEB;
+    float: left;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    color: #EF5B70;
+  }

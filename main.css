@@ -612,9 +612,6 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     color: #FFFFFF;
 }
 
-
-
-
 .footer-bottom-background {
     height: 79px;
     background: #222224;
@@ -655,3 +652,14 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     background-color: #FFFFFF;
 
 }
+
+.social-networcs-icon-facebook:hover,
+.social-networcs-icon-instagramm:hover,
+.social-networcs-icon-pintererst:hover,
+.social-networcs-icon-twitter:hover {
+    background-color:#F16D7F;
+    cursor: pointer;
+}
+
+
+

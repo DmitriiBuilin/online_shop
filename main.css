@@ -765,6 +765,12 @@ ul.catalog-header-page-breadcrumb li a:hover {
 .catalog-filter {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+.catalog-filter:hover {
+    cursor: pointer;
 }
 
 .catalog-filter-sections {
@@ -783,4 +789,25 @@ ul.catalog-header-page-breadcrumb li a:hover {
 
 .catalog-product-cards-header-secondlevel {
     margin-bottom: 65px;
+}
+
+.catalog-filter-icon {
+    fill: #000000;
+}
+
+.catalog-filter-elements{
+    align-self: center;
+    display: flex;
+}
+
+.catalog-filter-elements li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-right: 28px;
 }

@@ -177,10 +177,9 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 .man-in-black {
     position: relative;
     height: 764px;
-    background-image: url(img/man-in-black.png);
+    background-image: url(/img/man-in-black.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    
 }
 
 .the-brand {

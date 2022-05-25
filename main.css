@@ -364,6 +364,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
+    margin-bottom: 48px;
 }
 
 .product-cards-mainblock {
@@ -371,11 +372,9 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    margin-top: 18px;
 }
 
 .product-cards-item {
-    margin-top: 30px;
     width: 360px;
     height: 581px;
     box-sizing: border-box;
@@ -720,11 +719,10 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 .catalog-product-cards-header-secondlevel {
     display: flex;
-    justify-content: space-between;
 }
 
 ul.catalog-header-page-breadcrumb {
-    padding: 10px 16px;
+    padding-left: 10px 16px;
     list-style: none;
 }
 
@@ -767,6 +765,7 @@ ul.catalog-header-page-breadcrumb li a:hover {
     justify-content: space-between;
     align-items: center;
     width: 70px;
+    padding: 16px;
 }
 
 .catalog-filter:hover {
@@ -774,7 +773,7 @@ ul.catalog-header-page-breadcrumb li a:hover {
 }
 
 .catalog-filter-sections {
-
+    left: 304px;
 }
 
 .catalog-filter-txt {
@@ -810,4 +809,10 @@ ul.catalog-header-page-breadcrumb li a:hover {
     line-height: 17px;
     color: #6F6E6E;
     margin-right: 28px;
+}
+
+.catalog-filter-sections {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 304px;
 }

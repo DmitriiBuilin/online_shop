@@ -4,6 +4,7 @@
 }
 
 .container {
+    width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -172,12 +173,13 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     position: relative;
     height: 764px;
     background-color: #F1E4E6;
+    margin-bottom: 65px;
 }
 
 .man-in-black {
     position: relative;
     height: 764px;
-    background-image: url(/img/man-in-black.png);
+    background-image: url(img/man-in-black.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -234,19 +236,15 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 /* -- section_2 -- */
 
 .personal-offer {
-    height: 630px;
-
-}
-
-.personal-offer-first-part {
+    width: 100%;
+    max-width: 1140px;
+    height: 470px;
     display: flex;
-    padding-top: 65px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
-.personal-offer-second-part {
-    display: flex;
-    margin-top: 30px;
-}
 
 .personal-offer-link {
     text-decoration: none;
@@ -283,12 +281,10 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 .personal-offer-for-women {
     background-image: url(img/personal-women.png);
-    margin-right: 30px;
 }
 
 .personal-offer-for-men {
     background-image: url(img/personal-men.png);
-    margin-right: 30px;
 }
 
 .personal-offer-for-kids{
@@ -302,10 +298,9 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    width: 360px;
-    
+    max-width: 360px;
+    width: 100%;
     height: 260px;
-    
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -320,10 +315,10 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    width: 1140px;
-    max-width: 100%;
-    height: 180px;
-    max-height: 100%;
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    max-height: 180px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -338,6 +333,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    margin: 95px 0;
 }
 
 .product-cards-header-block {
@@ -371,6 +367,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .product-cards-item {
@@ -445,7 +442,6 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     border: 1px solid #FF6A6A;
     text-decoration: none;
     align-self: center;
-    margin: 77px 0 123px 0;
 }
 
 /* -- section_4 -- */

@@ -385,7 +385,9 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     width: 360px;
     height: 420px;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .product-cards-item-image-darken:hover {
@@ -394,6 +396,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     background: rgba(58, 56, 56, 0.86);
     background-blend-mode: darken;
     cursor: pointer;
+
 
 }
 
@@ -1250,50 +1253,56 @@ ul.catalog-header-page-breadcrumb li a:hover {
     display: flex;
 }
 
-/* -- button style -- */
+/* -- card button style -- */
 
-/* 
- button {
+.product-cards-item-image-darken button {
     width: 100%;
     max-width: 211px;
     height: 47px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 65px 0;
-    border: 1px solid #FF6A6A;
-    color: #F26376;
-    background-color: #FFFFFF;
+    margin: auto;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: unset;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    visibility: hidden;
+
 }
 
- button:hover {
+.product-cards-item-image-darken:hover .product-cards-item-image-darken-button {
+    visibility: visible;
+}
+
+.product-cards-item-image-darken button:hover {
     cursor: pointer;
-    background-color: #F26376;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #F26376;
+    border-color: #F26376;
 }
 
- button:hover svg {
-    fill: #FFFFFF;
-}
-
- svg {
-    margin: 0 23px 0 0;
+.product-cards-item-image-darken button:hover svg {
     fill: #F26376;
 }
 
- button:active {
+.product-cards-item-image-darken svg {
+    margin: 0 23px 0 0;
+    fill: #FFFFFF;
+}
+
+.product-cards-item-image-darken button:active {
     cursor: pointer;
     background-color: #F7F7F7;
     color: #F7F7F7;
     border: 1px solid #F7F7F7;
 }
 
- button:active svg {
-    fill: ##F26376;
+.product-cards-item-image-darken button:active svg {
+    fill: #FFFFFF;
 }
-*/
+

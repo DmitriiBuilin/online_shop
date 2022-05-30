@@ -1229,6 +1229,8 @@ ul.catalog-header-page-breadcrumb li a:hover {
     background-color: #F16D7F;
     text-transform: uppercase;
     margin: 17px 0 42px 0;
+    border: none;
+    box-sizing: border-box;
 }
 
 .shopping-cart-totalform-button:hover {

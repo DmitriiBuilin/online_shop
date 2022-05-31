@@ -238,8 +238,10 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 .personal-offer {
     width: 100%;
     max-width: 1140px;
-    height: 470px;
-    display: flex;
+    min-height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
@@ -310,21 +312,18 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 
 .personal-offer-accesorise {
-    
     background-image: url(img/personal-accesorise.png);
     display: flex;
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 1140px;
-    height: 100%;
-    max-height: 180px;
-    align-content: center;
+    min-height: 180px;
     justify-content: center;
     align-items: center;
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;    
+    grid-column: 3 span;
 }
 
 /* --section_3 -- */
@@ -1257,10 +1256,10 @@ ul.catalog-header-page-breadcrumb li a:hover {
 
 .product-cards-item-image-darken button {
     width: 100%;
-    max-width: 211px;
-    height: 47px;
+    max-width: 138px;
+    height: 43px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
     border: 1px solid #FFFFFF;
@@ -1269,8 +1268,8 @@ ul.catalog-header-page-breadcrumb li a:hover {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 17px;
     visibility: hidden;
 
 }
@@ -1291,7 +1290,7 @@ ul.catalog-header-page-breadcrumb li a:hover {
 }
 
 .product-cards-item-image-darken svg {
-    margin: 0 23px 0 0;
+
     fill: #FFFFFF;
 }
 
@@ -1306,3 +1305,57 @@ ul.catalog-header-page-breadcrumb li a:hover {
     fill: #FFFFFF;
 }
 
+/* -- adaptive index.html -- */
+
+@media (max-width: 1110px) {   
+    .product-cards-mainblock {
+        max-width: 750px;
+    }
+    .the-brand {
+        right: 34px ;
+    }
+}
+
+@media (max-width: 768px) {
+    .the-brand {
+        top: 139px;
+    }
+    .man-in-black {
+        background-size: 27%;
+        height: 367px;
+    }
+    .banner-whith-man {
+        height: 367px;
+    }
+    .top-the-brand-text {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .bottom-the-brand-text {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .personal-offer-for-women, .personal-offer-for-men, .personal-offer-for-kids {
+        height: 167px;
+    }
+    .personal-offer-accesorise {
+        min-height: 116px;
+    }
+    .personal-offer {
+        min-height: auto;
+    }
+    .product-cards-mainblock {
+        margin-bottom: 3px;
+    }
+    .product-cards-button {
+        margin-bottom: 65px;
+    }
+    .special-offers {
+        height: auto;
+    }
+    .special-offers-block {
+        flex-direction: column;
+        height: 610px;
+        justify-content: space-around;
+    }
+}

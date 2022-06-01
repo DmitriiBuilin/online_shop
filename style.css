@@ -1329,6 +1329,19 @@ ul.catalog-header-page-breadcrumb li a:hover {
     fill: #F26376;
 }
 
+.product-cards-button-transform {
+    margin: 0 0 95px 0;
+}
+.product-cards-button-transform:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+
 /* -- adaptive index.html -- */
 
 @media (max-width: 1110px) {   

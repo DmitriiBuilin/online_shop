@@ -1306,6 +1306,14 @@ ul.catalog-header-page-breadcrumb li a:hover {
     fill: #FFFFFF;
 }
 
+/* -- registration.html -- */
+
+.registration-form {
+
+}
+
+
+
 /* -- transformation -- */
 
 .navigation-panel-transform,
@@ -1321,6 +1329,7 @@ ul.catalog-header-page-breadcrumb li a:hover {
     -ms-transform: scale(1.15);
     transform: scale(1.15);
     cursor: pointer;
+    transition: linear 0.2s;
 }
 
 .navigation-panel-transform:active,

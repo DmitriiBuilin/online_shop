@@ -1097,15 +1097,9 @@ ul.catalog-header-page-breadcrumb li a:hover {
     border-color: #F16D7F;
 }
 
-.shopping-cart-place-rightside{
-
-}
-
 .shopping-cart-adress-forms {
     display: flex;
     flex-direction: column;
-    
-
 }
 
 .shopping-cart-adress-headder {
@@ -1308,6 +1302,125 @@ ul.catalog-header-page-breadcrumb li a:hover {
 
 /* -- registration.html -- */
 
+.registration-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px auto;
+}
+.registration-form-information {
+    width: 100%;
+    max-width: 652px;
+}
+.registration-form-information h4 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+}
+.registration-form-information p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0 0 21px 0;
+}
+.registration-form-information li {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px; 
+    color: #000000;
+    list-style: none;
+    margin: 0 0 16px 0;
+}
+.registration-form-information svg {
+    margin: 0 23px 0 0;
+}
+
+.registration-form-input {
+    display: flex;
+    flex-direction: column  ;
+}
+
+.registration-form-input-text {
+    display: block;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+    width: 100%;
+    max-width: 359px;
+    min-height: 44px;
+    margin: 21px 0 0 0;
+    padding: 0 0 0 17px;
+}
+.registration-form-input label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    background: rgba(244, 244, 244, 0.7);
+}
+.registration-form-input-radio {
+    margin: 32px 0 33px 0;
+}
+.registration-form-input-radio input {
+    display: inline;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin: 0 10px 0 0;
+}
+.registration-form-input-radio label{
+    margin: 0 20px 0 0;
+}
+.registration-form-input p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 39px 0;
+}
+.registration-form-input button {
+    width: 167px;
+    height: 50px;
+    background: #F16D7F;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    box-sizing: border-box;
+}
+.registration-form-input button:hover {
+    background-color: #FFFFFF;
+    color: #F16D7F;
+    cursor: pointer;
+    border: none;
+}
+.registration-form-input button:active {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-color: #F16D7F;
+}
 
 /* -- transformation -- */
 

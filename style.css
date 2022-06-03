@@ -76,6 +76,7 @@
     color: #FFFFFF;
 }
 
+
 /* -- pop-up-menu -- */
 input[type=checkbox]:checked ~ .pop-up-menu {
     display: flex;
@@ -90,7 +91,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     position: absolute;
     z-index: 30;
     background-color: #FFFFFF;
-    margin-top: 25px;
+    top: 75px;
     width: 232px;
     height: 764px;
     padding: 16px 0 157px 34px;
@@ -113,8 +114,46 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 
 .pop-up-menu-close {
+    width: 12px;
+    height: 12px;
     align-self: flex-end;
-    margin-right: 16px;
+    margin: 0 17px 0 0;
+    align-items: center;
+    position: relative;
+}
+
+.pop-up-menu-close label:hover {
+    cursor: pointer;
+}
+.pop-up-menu-close:hover {
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    cursor: pointer;
+    transition: linear 0.1s;
+}
+.pop-up-menu-close label:active {
+    cursor: pointer;
+}
+
+.pop-up-menu-close-button_1,
+.pop-up-menu-close-button_2 {
+    background-color: #6F6E6E;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px 1px 1px 1px;
+    position: absolute;
+}
+
+.pop-up-menu-close-button_1 {
+    transform: rotate(45deg);
+
+}
+.pop-up-menu-close-button_2 {
+    transform: rotate(-45deg);
+
 }
 
 .pop-up-menu-menu-link {
@@ -764,7 +803,46 @@ ul.catalog-header-page-breadcrumb li a:hover {
     color: #F16D7F;
 }
 
+/* -- catalog filter -- */
 
+input[type=checkbox]:checked ~ .catalog-filter-list {
+    display: flex;
+}
+
+#filter {
+    display: none;
+}
+
+.catalog-filter-list {
+    display: none;
+    width: 360px;
+    height: 531px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 20;
+    flex-direction: column;
+}
+
+.catalog-filter-class {
+    list-style: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    text-transform: uppercase;
+}
+.catalog-filter-item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: capitalize;
+}
 
 .catalog-filter {
     display: flex;
@@ -772,11 +850,27 @@ ul.catalog-header-page-breadcrumb li a:hover {
     align-items: center;
     width: 70px;
     padding: 16px;
+    position: relative;
 }
 
 .catalog-filter:hover {
     cursor: pointer;
 }
+
+.catalog-filter:hover .catalog-filter-txt {
+    color: #F16D7F;
+}
+.catalog-filter:hover .catalog-filter-icon {
+    fill: #F16D7F;
+}
+
+.catalog-filter-list p {
+    color: #F16D7F;
+}
+.catalog-filter-list svg {
+    fill: #F16D7F;
+}
+
 
 .catalog-filter-sections {
     left: 304px;
@@ -1413,7 +1507,7 @@ ul.catalog-header-page-breadcrumb li a:hover {
     background-color: #FFFFFF;
     color: #F16D7F;
     cursor: pointer;
-    border: none;
+    border: 1px solid #F16D7F;
 }
 .registration-form-input button:active {
     background-color: #F16D7F;

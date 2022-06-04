@@ -951,6 +951,54 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
         margin-left: 304px;
 }
 
+input[type=checkbox]:checked ~ .filter-size-options {
+    display: flex;
+}
+
+#filter-size {
+    display: none;
+}
+
+.filter-size-options {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 31px;
+    margin: 5px 0 0 -9px;
+    width: 79px;
+    height: 103px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    z-index: 20;
+
+}
+
+.filter-size-options label {
+    text-transform: uppercase;
+    margin-left: 31px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.filter-size-options label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    left: 10px;
+    margin: 2px 0 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: -4px 0;
+    z-index: 21;
+  }
+
+
 /* -- product page -- */
 
 .product-maincard {
@@ -1499,7 +1547,6 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
     font-size: 16px;
     line-height: 19px;
     color: #222222;
-    background: rgba(244, 244, 244, 0.7);
 }
 .registration-form-input-radio {
     margin: 32px 0 33px 0;
@@ -1522,6 +1569,8 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
     line-height: 16px;
     color: #B1B1B1;
     margin: 15px 0 39px 0;
+    width: 100%;
+    max-width: 359px;
 }
 .registration-form-input button {
     width: 167px;

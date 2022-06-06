@@ -1,3 +1,38 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/lato-light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/lato-regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/lato-bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/lato-black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/lato-italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -484,7 +519,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     border: 1px solid #FF6A6A;
     text-decoration: none;
     align-self: center;
-    margin: 0 0 95px 0;
+    margin: 0 0 110px 0;
 }
 
 /* -- section_4 -- */
@@ -528,6 +563,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     line-height: 17px;
     text-align: center;
     color: #FBFBFB;
+    padding: 0 10px 0 10px;
 }
 
 /* -- footer -- */
@@ -575,6 +611,10 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     text-align: center;
     color: #222224;
     padding-bottom: 20px;
+}
+
+.feedback-block-left-txt span {
+    font-style: italic;
 }
 
 .feedback-block-right-part {
@@ -1624,7 +1664,7 @@ input[type="checkbox"] {
 }
 
 .product-cards-button-transform {
-    margin: 0 0 95px 0;
+    margin: 0 0 110px 0;
 }
 .product-cards-button-transform:hover {
     -moz-transform: rotate(360deg);
@@ -1644,13 +1684,19 @@ input[type="checkbox"] {
     }
     .the-brand {
         right: 34px ;
+        align-self: center;
+        }
+    
+    .navigation-panel,
+    .footer-bottom-block {
+        padding: 0 32px 0 32px;
+    }
+    .personal-offer-block {
+        width: 95%;
     }
 }
 
-@media (max-width: 768px) {
-    .the-brand {
-        top: 139px;
-    }
+@media (max-width: 960px) {
     .man-in-black {
         background-size: 27%;
         height: 367px;
@@ -1666,8 +1712,20 @@ input[type="checkbox"] {
         font-size: 24px;
         line-height: 29px;
     }
+    .the-brand {
+        top: 139px;
+        }
+    .banner-whith-man {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
     .personal-offer-for-women, .personal-offer-for-men, .personal-offer-for-kids {
         height: 167px;
+        background-position: top;
     }
     .personal-offer-accesorise {
         min-height: 116px;
@@ -1702,10 +1760,105 @@ input[type="checkbox"] {
     .feedback-block-left-part {
         margin-bottom: 48px;
     }
-}
-
-@media (max-width: 720px) {
+    .banner-whith-man {
+        margin-bottom: 20px;
+    }
     .product-cards-mainblock {
         justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    .man-in-black {
+        background-image: none;
+    }
+    .the-brand {
+        left: auto;
+        right: auto;
+    }
+    .man-in-black {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation-panel,
+    .footer-bottom-block {
+        padding: 0 16px 0 16px;
+    }
+    .personal-offer {
+        grid-gap: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .personal-offer {
+        display: flex;
+        justify-content: center;
+        grid-gap: 32px;
+    }
+    .personal-offer-for-women, .personal-offer-for-men, .personal-offer-for-kids {
+        height: 260px;
+        background-position: center;
+
+    }
+    .personal-offer-accesorise {
+        min-height: 111px;
+        max-width: 360px;
+    }
+    .top-the-brand-text {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .bottom-the-brand-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .bottom-the-brand-text span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .the-brand::before {
+        height: 66px;
+    }
+
+    .footer-bottom-background {
+        height: 143px;
+    }
+    .footer-bottom-block {
+        height: 143px;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .social-networcs-icon   {
+        margin: 0 0 40px 0;
+    }
+    .footer-bottom-allrigts {
+        margin-bottom: 9px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .man-in-black {
+        min-height: 363px;
+    }
+    .banner-whith-man {
+        margin-bottom: 64px;
+    }
+    .personal-offer {
+        grid-gap: 32px;
+    }
+    .product-cards-sub-header {
+        margin-bottom: 64px;
+    }
+    .feedback-block {
+        height: 550px;
+    }
+    .feedback-background {
+        background-position: left;
     }
 }

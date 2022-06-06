@@ -1676,11 +1676,14 @@ input[type="checkbox"] {
 }
 
 
-/* -- adaptive index.html -- */
+/* -- adaptive tablet -- */
 
 @media (max-width: 1110px) {   
     .product-cards-mainblock {
         max-width: 750px;
+    }
+    .product-cards-item:nth-child(3) {
+        display: none;
     }
     .the-brand {
         right: 34px ;
@@ -1694,6 +1697,12 @@ input[type="checkbox"] {
     .personal-offer-block {
         width: 95%;
     }
+    .catalog-product-cards-header-firstlevel {
+        padding: 0 16px 0 16px;
+        width: auto;
+
+    }
+    
 }
 
 @media (max-width: 960px) {
@@ -1735,6 +1744,7 @@ input[type="checkbox"] {
     }
     .product-cards-mainblock {
         margin-bottom: 3px;
+        justify-content: space-between;
     }
     .product-cards-button {
         margin-bottom: 65px;
@@ -1763,10 +1773,19 @@ input[type="checkbox"] {
     .banner-whith-man {
         margin-bottom: 20px;
     }
+    .catalog-filter-sections {
+        margin-left: 0;
+    }
+    .catalog-product-cards-header-secondlevel {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 720px) {
     .product-cards-mainblock {
         justify-content: center;
     }
-
 }
 
 
@@ -1838,6 +1857,35 @@ input[type="checkbox"] {
     .footer-bottom-allrigts {
         margin-bottom: 9px;
     }
+    .catalog-header-txt {
+        margin: 24px 0 32px 0;
+    }
+    .catalog-product-cards-header-firstlevel {
+        flex-direction: column;
+    }
+    .catalog-filter-txt {
+        display: none;
+    }
+    .catalog-filter-icon {
+        transform: scale(2);
+    }
+    .catalog-filter {
+        width: auto;
+    }
+    .catalog-filter-elements li {
+        font-size: 12px;
+        line-height: 14px;  
+    }
+    .catalog-product-cards-header-secondlevel {
+        margin: 24px auto 32px auto;
+    }
+    .login-button,
+    .cart-button {
+        display: none;
+    }
+    .top-right-block {
+        justify-content: flex-end;
+    }
 }
 
 
@@ -1861,11 +1909,5 @@ input[type="checkbox"] {
     .feedback-background {
         background-position: left;
     }
-    .login-button,
-    .cart-button {
-        display: none;
-    }
-    .top-right-block {
-        justify-content: flex-end;
-    }
+
 }

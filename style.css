@@ -1861,4 +1861,11 @@ input[type="checkbox"] {
     .feedback-background {
         background-position: left;
     }
+    .login-button,
+    .cart-button {
+        display: none;
+    }
+    .top-right-block {
+        justify-content: flex-end;
+    }
 }

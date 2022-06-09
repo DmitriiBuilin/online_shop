@@ -191,6 +191,11 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 }
 
+
+.shopping-cart-header-wrp {
+    display: flex;
+}
+
 .pop-up-menu-menu-link {
     text-transform: uppercase;
     font-family: 'Lato';
@@ -1478,6 +1483,15 @@ input[type="checkbox"] {
 .shopping-cart-totalform-priceblock {
     display: flex;
 }
+
+.close-cart {
+    transform: scale(2);
+    align-self: auto;
+    border: none;
+    background: none;
+    margin-top: 28px;
+}
+
 
 /* -- card button style -- */
 

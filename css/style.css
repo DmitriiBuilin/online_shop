@@ -1,34 +1,34 @@
 @font-face {
     font-family: lato;
-    src: url(fonts/lato-light.ttf);
+    src: url(../fonts/lato-light.ttf);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: lato;
-    src: url(fonts/lato-regular.ttf);
+    src: url(../fonts/lato-regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: lato;
-    src: url(fonts/lato-bold.ttf);
+    src: url(../fonts/lato-bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: lato;
-    src: url(fonts/lato-black.ttf);
+    src: url(../fonts/lato-black.ttf);
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: lato;
-    src: url(fonts/lato-italic.ttf);
+    src: url(../fonts/lato-italic.ttf);
     font-weight: 400;
     font-style: italic;
 }
@@ -253,7 +253,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 .man-in-black {
     position: relative;
     height: 764px;
-    background-image: url(img/man-in-black.png);
+    background-image: url(../img/man-in-black.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -357,15 +357,15 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     color: #F16D7F;
 }
 .personal-offer-for-women {
-    background-image: url(img/personal-women.png);
+    background-image: url(../img/personal-women.png);
 }
 
 .personal-offer-for-men {
-    background-image: url(img/personal-men.png);
+    background-image: url(../img/personal-men.png);
 }
 
 .personal-offer-for-kids{
-    background-image: url(img/personal-kids.png);
+    background-image: url(../img/personal-kids.png);
 }
 
 .personal-offer-for-women,
@@ -386,7 +386,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 
 .personal-offer-accesorise {
-    background-image: url(img/personal-accesorise.png);
+    background-image: url(../img/personal-accesorise.png);
     display: flex;
     background-repeat: no-repeat;
     background-position: center;
@@ -444,6 +444,14 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 
 .product-cards-item {
+    width: 360px;
+    height: 581px;
+    box-sizing: border-box;
+    background-color:#F8F8F8;
+    margin: 0 0 30px 0;
+}
+
+.product-cards-item-catalog {
     width: 360px;
     height: 581px;
     box-sizing: border-box;
@@ -575,7 +583,7 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 .feedback-background {
     height: 448px;
-    background-image: url(img/background_footer.png);
+    background-image: url(../img/background_footer.png);
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
@@ -618,7 +626,6 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 }
 
 .feedback-block-right-part {
-    width: 100%;
     height: 142px;
     display: flex;
     flex-direction: column;
@@ -964,12 +971,20 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
     fill: #000000;
 }
 
-.catalog-filter-elements{
-    align-self: center;
-    display: flex;
+.catalog-filter-elements {
+    width: 296px;
+    margin-right: 7px;
 }
 
-.catalog-filter-elements li {
+.catalog-filter-elements,
+.catalog-filter-elements-product {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-filter-elements li,
+.catalog-filter-elements-product li {
     list-style: none;
     text-transform: uppercase;
     font-family: 'Lato';
@@ -978,10 +993,10 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    margin-right: 28px;
 }
 
-.catalog-filter-elements svg {
+.catalog-filter-elements svg,
+.catalog-filter-elements-product svg {
     margin-left: 9px;
 }
 
@@ -1051,7 +1066,7 @@ input[type="checkbox"] {
     align-items: center;
     height: 777px;
     background-color: #F7F7F7;
-    background-image: url(img/product-image.png);
+    background-image: url(../img/product-image.png);
     background-repeat: no-repeat;
     background-position: center;
     position: static;
@@ -1153,6 +1168,7 @@ input[type="checkbox"] {
 }   
 
 .product-filter-sections {
+    width: 373px;
     margin: 0 0 49px 0;
 }
 
@@ -1185,7 +1201,7 @@ input[type="checkbox"] {
 }
 
 .product-maincard-properties svg {
-    margin: 0 23px 0 0;
+    margin: 0 0 0 10px;
     fill: #F26376;
 }
 
@@ -1682,7 +1698,7 @@ input[type="checkbox"] {
     .product-cards-mainblock {
         max-width: 750px;
     }
-    .product-cards-item:nth-child(3) {
+    .product-cards-item-catalog:nth-child(3) {
         display: none;
     }
     .the-brand {
@@ -1876,6 +1892,10 @@ input[type="checkbox"] {
         font-size: 12px;
         line-height: 14px;  
     }
+    .catalog-filter-elements-product li {
+        font-size: 10px;
+        line-height: 12px;
+    }
     .catalog-product-cards-header-secondlevel {
         margin: 24px auto 32px auto;
     }
@@ -1908,6 +1928,13 @@ input[type="checkbox"] {
     }
     .feedback-background {
         background-position: left;
+    }
+    .product-filter-sections {
+        width: 304px;
+    }
+    .catalog-filter-elements, 
+    .catalog-filter-elements-product {
+        width: 260px;
     }
 
 }

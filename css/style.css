@@ -194,6 +194,38 @@ input[type=checkbox]:checked ~ .pop-up-menu {
 
 .shopping-cart-header-wrp {
     display: flex;
+    align-items: flex-start;
+}
+
+.shopping-cart-close-button {
+    border: none;
+    background: none;
+    position: relative;
+    margin: 28px 22px 0 0;
+} 
+
+.shopping-cart-close-button:hover {
+    cursor: pointer;
+}
+.shopping-cart-close-button::before {
+    content: "";
+    display: block;
+    background: #575757;
+    width: 3px;
+    height: 22px;
+    transform: rotate(45deg);
+    position: absolute;
+    border-radius: 3px 3px 3px 3px;
+}
+.shopping-cart-close-button::after {
+    content: "";
+    display: block;
+    background: #575757;
+    width: 3px;
+    height: 22px;
+    transform: rotate(-45deg);
+    position: absolute;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .pop-up-menu-menu-link {
@@ -776,12 +808,19 @@ input[type=checkbox]:checked ~ .pop-up-menu {
     display: inline-block;
     border: 1px solid #EBEBEB;
     margin: 48px auto 96px auto;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 283px;
+    height: 44px;
   }
   
   .pagination a {
     color: #EBEBEB;
     float: left;
-    padding: 12px 16px;
+    padding: 12px 8px;
     text-decoration: none;
   }
   
@@ -895,10 +934,13 @@ input[type=checkbox]:checked ~ .catalog-filter-list {
 }
 
 .catalog-filter-header-border {
+    border: none;
+    background: none;
     width: 314px;
     border-bottom: 1px solid #EBEBEB;
     padding: 0px 0px 9px 14px;
     margin: 0 0 19px 0;
+    
 }
 .catalog-filter-header::before {
     content: "";
@@ -1484,13 +1526,6 @@ input[type="checkbox"] {
     display: flex;
 }
 
-.close-cart {
-    transform: scale(2);
-    align-self: auto;
-    border: none;
-    background: none;
-    margin-top: 28px;
-}
 
 
 /* -- card button style -- */
@@ -1706,6 +1741,22 @@ input[type="checkbox"] {
 }
 
 
+/* -- other styles -- */
+
+.catalog-filter-elements li {
+    display: flex;
+    align-items: center;  
+}
+
+.catalog-filter-elements-product li {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-filter-elements-popup {
+    display: block !important;
+}
+
 /* -- adaptive tablet -- */
 
 @media (max-width: 1110px) {   
@@ -1904,8 +1955,9 @@ input[type="checkbox"] {
     }
     .catalog-filter-elements li {
         font-size: 12px;
-        line-height: 14px;  
+        line-height: 14px;
     }
+
     .catalog-filter-elements-product li {
         font-size: 10px;
         line-height: 12px;

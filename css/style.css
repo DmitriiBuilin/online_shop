@@ -1272,7 +1272,7 @@ input[type="checkbox"] {
 .shopping-cart-place {
     display: flex;
     justify-content: space-between;
-
+    padding: 0 16px 0 16px;
 }
 .shopping-cart-place-leftside {
     width: 100%;
@@ -1498,7 +1498,7 @@ input[type="checkbox"] {
 .shopping-cart-totalform-cost {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
@@ -1964,28 +1964,66 @@ display: flex;
         grid-gap: 5px;
     }
 
-
-
+    .catalog-header-txt-cart {
+        margin: 50px 0 0 0 !important;
+    }
     .shopping-cart-place {
-      
+        padding: 0 8px 0 8px;
     }
     .shopping-cart-place-leftside {
-   
+        margin: 39px 0 0 0;
+        align-items: center;
     }
     .shopping-cart-place-rightside {
-      
+        flex-direction: column;
+        align-items: center;
     }
     .shopping-cart-item {
-      
+        max-width: 358px;
+        max-height: 188px;
+        margin: 0 0 32px 0;
+    }
+    .shopping-cart-description h2{
+        font-size: 16px;
+        line-height: 19px;
+        margin: 14px 0 26px 0;
+    }
+    .shopping-cart-description p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .shopping-cart-description-quantity input {
+        width: 24px;
+        height: 15px;
+    }
+    .shopping-cart-description-quantity input {
+        text-indent: 9px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .shopping-cart-close-button {
+        transform: scale(0.6);  
+        margin: 17px 12px 0 0;
+    }
+    .shopping-cart-button {
+        max-width: 175px;
+        min-height: 33px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .shopping-cart-button:last-child {
+        max-width: 175px;
+        margin-left: 9px;
     }
     .shopping-cart-place-buttons {
-     
+        width: 100%;
     }
     .shopping-cart-header-wrp{
        
     }
     .shopping-cart-description {
-       
+        margin: 0 0 0 17px;
+
     }
     .shopping-cart-adress-headder {
 
@@ -1994,7 +2032,7 @@ display: flex;
 
     }
     .shopping-cart-adress-forms {
-
+        margin: 0;
     }
 
 
@@ -2002,6 +2040,10 @@ display: flex;
 }
 
 @media (max-width: 500px) {
+
+    .catalog-header-txt-cart {
+        margin: 50px 0 0 0 !important;
+    }
     .personal-offer {
         display: flex;
         justify-content: center;
@@ -2086,6 +2128,10 @@ display: flex;
 
 
 @media (max-width: 375px) {
+
+    .catalog-header-txt-cart {
+        margin: 50px 0 0 0 !important;
+    }
     .man-in-black {
         min-height: 363px;
     }

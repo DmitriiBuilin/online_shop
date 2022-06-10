@@ -1820,6 +1820,12 @@ display: flex;
     display: none;
 }
 
+.shopping-cart-place-rightside {
+    width: 100%;
+    max-width: 360px;
+    margin-left: 16px;
+}
+
 /* -- adaptive tablet -- */
 
 @media (max-width: 1110px) {   
@@ -1912,6 +1918,7 @@ display: flex;
         display: flex;
         justify-content: space-between;
         margin: 0 16px 129px 16px;
+
     }
     .shopping-cart-item {
         max-width: 734px;

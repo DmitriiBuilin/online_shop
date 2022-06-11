@@ -1101,6 +1101,15 @@ input[type="checkbox"] {
     z-index: 21;
   }
 
+#size-xs:checked ~ .filter-size-options-item-xs::before,
+#size-s:checked ~ .filter-size-options-item-s::before,
+#size-m:checked ~ .filter-size-options-item-m::before,
+#size-l:checked ~ .filter-size-options-item-l::before {
+  background-image: url(..//img/png-clipart-check-mark-computer-icons-green-tick-miscellaneous-angle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 /* -- product page -- */
 
